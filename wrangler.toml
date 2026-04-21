@@ -1,0 +1,20 @@
+name = "telecom-ims"
+main = ".open-next/worker.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "telecom-ims"
+database_id = "d7062eac-2d81-492a-bafc-926cc9227244"
+
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "telecom-ims-media"
+
+[vars]
+NEXT_PUBLIC_APP_URL = "https://telecom-ims.a807866778.workers.dev"

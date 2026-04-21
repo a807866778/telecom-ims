@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- 背景圆 -->
+  <circle cx="24" cy="24" r="22" fill="#1e40af"/>
+  <!-- 信号塔/基站图标 -->
+  <path d="M24 8 L24 28" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 14 L24 8 L30 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- 底部横线 -->
+  <path d="M16 28 L32 28" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <!-- 左右延伸线 -->
+  <path d="M24 18 L16 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 18 L32 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <!-- 信号波纹 -->
+  <path d="M10 32 Q12 36 16 38" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M38 32 Q36 36 32 38" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

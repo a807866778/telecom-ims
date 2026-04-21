@@ -1,0 +1,56 @@
+{
+  "name": "telecom-ims",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:cf": "opennextjs-cloudflare build",
+    "start": "next start",
+    "start:cf": "opennextjs-cloudflare dev",
+    "deploy:cf": "npm run build:cf && npx wrangler deploy",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:push:d1": "wrangler d1 execute project-inventory --local --file=drizzle/*.sql",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "npx tsx src/lib/db/seed.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "@opennextjs/cloudflare": "^1.19.1",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^3.6.0",
+    "drizzle-orm": "^0.31.2",
+    "jose": "^5.6.3",
+    "next": "15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.8.1",
+    "uuid": "^10.0.0",
+    "wrangler": "^3.0.0",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.19",
+    "critters": "^0.0.23",
+    "drizzle-kit": "^0.22.8",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "15.3.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "tsx": "^4.15.2",
+    "typescript": "^5.4.5"
+  }
+}
